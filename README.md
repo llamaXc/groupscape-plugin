@@ -1,6 +1,6 @@
-# create-react-app React Project with Node Express Backend
+# MERN App
 
-> Example on using create-react-app with a Node Express Backend
+> Node + React App for luke and prestons
 
 ## Usage
 
