@@ -1,15 +1,17 @@
 
-export function login(username, password, id){
+export function login(username, password, accountId, jwtToken, roomId){
     var isLoggedIn = true;
 
     //validate crediental   
 
-    console.log(username);
+    console.log("Loggin in and storing jwt: " + jwtToken);
 
     localStorage.setItem('AccountData',  JSON.stringify(
             {isLoggedIn: isLoggedIn,
             username: username,
-            token: id
+            accountId: accountId,
+            token: jwtToken,
+            roomId: roomId
             })
         );
     
@@ -20,10 +22,7 @@ function accountExists(){
 }
 
 export function logout(){
-    localStorage.setItem('AccountData', {
-        isLoggedIn: false,
-        username: "",
-        token: ""});
+    localStorage.setItem('AccountData', {});
     console.log("Logging user out");
 
 }

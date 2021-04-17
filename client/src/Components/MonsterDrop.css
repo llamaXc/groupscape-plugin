@@ -1,0 +1,125 @@
+.drop-container{
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin: 20px;
+    background-color: white;
+}
+
+.monster-info{
+    font-weight: bold;
+}
+
+.player-info{
+    flex-grow:  1;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.monster-flex{
+    flex-grow: 8;
+    margin-left: 10px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #292727fa;
+}
+
+.itemInfoFlexbox{
+    flex-grow: 5;
+    display: flex;
+    flex-direction: row;  
+}
+
+.tri-column{
+    display: flex;
+    justify-content: center;
+}
+
+.left-sidebar{
+    display: flex;
+    flex-grow: 1;    
+    align-self: flex-start;
+    flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.player-list{
+    list-style-type: none;
+}
+
+.player-list li{
+    margin-bottom: 4px;
+    text-align: left;
+
+}
+
+.main-panel{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 9;
+    justify-content: center;  
+}
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#dropNumber{
+    margin-top: 0px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.fadeIn{
+    opacity: 0;
+    pointer-events:none; 
+}
+
+.faddedIn{
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.million-gp-color{
+    background-color: blueviolet;
+}
+.hundred-k-gp-color{
+    background-color: brown;
+}
+.fifty-k-gp-color{
+    background-color: cornflowerblue;
+}
+.ten-k-gp-color{
+    background-color: darkkhaki;
+}
+.cheap-gp-color{
+    background-color: azure;
+}
+
+.runescape-gold-color{
+    font-family: 'IBM Plex Mono', monospace;
+    color:  #ebd24a
+}
+
+.loot-logger{
+    background-color: rgb(199, 194, 194);
+    max-width: 500px;
+    height: 100%;
+    border: 1px solid black;
+}

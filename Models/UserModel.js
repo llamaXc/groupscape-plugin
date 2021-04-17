@@ -4,7 +4,8 @@ var Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
     username: String,
-    password: String
+    password: String,
+    currentRoomId: String
 });
 
 // Compile model from schema

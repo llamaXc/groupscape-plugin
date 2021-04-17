@@ -11,6 +11,8 @@ export default class Navbar extends Component {
     renderUser(){
         if(this.props.accountState.isLoggedIn){
             return <p>User: {this.props.accountState.username}</p>
+        }else{
+            return <p>Welcome Guest!</p>
         }
     }
 
@@ -34,9 +36,8 @@ export default class Navbar extends Component {
             <nav className="navbar">
                 <h1>OSRSEvents</h1>
                 <div className="links">
-                    <Link to="/">Home</Link>
+                    <Link to="/homepage">Home</Link>
                     {this.props.accountState && this.renderAccount()}
-
                     {this.props.accountState && this.renderLogin()}
                     {this.props.accountState && this.renderUser()}
                 </div>
