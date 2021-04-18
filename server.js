@@ -280,7 +280,7 @@ app.post('/loot-drop/', async  (req, res) => {
     return res.send({message: "Invalid account id", success: false});
   }
 
-  var osrsPlayer = {name: "Iron 69M", world: 340, location: "Lumbridge"}
+  var osrsPlayer = {name: user.username, world: 340, location: "Lumbridge"}
   var drop = {player: osrsPlayer, monster: {name: lootInfo.name, level: lootInfo.level}, items: lootInfo.lootItems}
   console.log(drop)
 
