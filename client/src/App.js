@@ -169,7 +169,7 @@ export default class App extends Component {
     currentDrops.splice(0,0,drop);
 
     //Remove old elements from array?
-    currentDrops.splice(5)
+    currentDrops.splice(50)
 
     //Update state to re render 
     this.setState({gpEarned: this.state.gpEarned + worth});
